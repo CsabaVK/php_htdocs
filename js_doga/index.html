@@ -1,0 +1,50 @@
+<link href='css.css' type='text/css' rel='stylesheet'>
+<script src="teglalap.js"></script>
+<script src="kor.js"></script>
+
+
+<form class='sikidom' name='teglalap'>
+    <h4> A téglalap </h4>
+    <b>Kiindulási adatok:</b><br>
+
+        <span>
+            <i><b>'a'</b></i> oldal hossza: 
+        </span> 
+            <input name='a' size=5> cm<br>
+        <span>
+            <i><b>'b'</b></i> oldal hossza: 
+        </span> 
+            <input name='b' size=5> cm<br>
+
+    <span></span>
+        <input type=button value='Számol' onclick='teglafunction();'>
+
+    <br>
+
+    <b>Eredmények:</b><br>
+
+        <span>Kerület:</span>
+            <input name='K' size=8 readonly> cm<br>
+        <span>Terület:</span>
+            <input name='T' size=8 readonly> cm<sup>2</sup>
+</form>
+
+<!-- --- -->
+
+<form class='sikidom' name='kor'>
+	<h4> A kör </h4>
+	<b>Adatok:</b><br>
+
+        <span>A kör sugara:</span> 
+            <input name='r' size=9 onblur='korfunction(1)'; onfocus='deletevalue();'> cm<br>
+        <span>A kör kerülete:</span> 
+            <input name='K' size=9 onblur='korfunction(2);' onfocus='deletevalue();'> cm<br>
+        <span>A kör területe:</span> 
+            <input name='T' size=9 onblur='korfunction(3);' onfocus='deletevalue();'> cm<sup>2</sup> 
+            
+    <br>
+    <br>
+
+    <span> </span>
+    <input type=button value='Számol'>
+</form>
